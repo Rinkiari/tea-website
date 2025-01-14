@@ -88,7 +88,8 @@ section h2 {
 }
 
 #introduction {
-  width: 1113px;
+  width: 100%;
+  max-width: 1113px;
   height: 820px;
   position: relative;
   overflow: hidden;
@@ -104,7 +105,7 @@ section h2 {
   background-image: url('./assets/vvedenie.jpg');
   background-size: cover;
   background-position: center;
-  filter: blur(12px) brightness(0.6);
+  filter: blur(11px) brightness(0.6);
   z-index: 0;
 }
 
@@ -338,8 +339,8 @@ footer h2 {
 }
 
 .icon_email {
-  width: 28px;
-  height: 28px;
+  max-width: 28px;
+  max-height: 28px;
 }
 
 .footer_flexik {
@@ -353,6 +354,15 @@ footer h2 {
 
 /* Адаптивный дизайн (не доделал) */
 @media (max-width: 768px) {
+  img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  header {
+    padding: 20px 5%;
+  }
+
   header h1 {
     font-size: 2.5rem;
   }
@@ -364,5 +374,47 @@ footer h2 {
 
   main {
     padding: 20px 5%;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 30px 5%;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  section p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 15px 3%;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 20px 3%;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  section p {
+    font-size: 0.9rem;
   }
 }
