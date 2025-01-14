@@ -32,6 +32,8 @@ header p {
   margin-top: 10px;
   font-size: 1.2rem;
   opacity: 0.9;
+  text-shadow: -1px -1px 0 black, /* Тень сверху-слева */ 1px -1px 0 black,
+    /* Тень сверху-справа */ -1px 1px 0 black, /* Тень снизу-слева */ 1px 1px 0 black; /* Тень снизу-справа */
 }
 
 /* Навигация */
