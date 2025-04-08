@@ -1,0 +1,420 @@
+/* мейн стили */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+/* шапка */
+header {
+  background-image: url('./assets/header_bg4x.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(232, 255, 200);
+  padding: 30px 10%;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  opacity: 0.9;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+/* навигация */
+nav {
+  background-color: #333;
+  padding: 15px 10%;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* разделы статьи */
+main {
+  padding: 30px 10%;
+}
+
+section {
+  margin-bottom: 50px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  border-bottom: 3px solid #4caf50;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#introduction {
+  width: 100%;
+  max-width: 1113px;
+  height: 820px;
+  position: relative;
+  overflow: hidden;
+}
+
+#introduction::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/vvedenie.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(11px) brightness(0.6);
+  z-index: 0;
+}
+
+.content {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  margin: 0 10px;
+  color: white;
+  text-align: center;
+}
+
+.content h2 {
+  color: #e1dbd6;
+  text-shadow: 0 1px 1px rgb(0, 0, 0, 1);
+}
+
+.content p {
+  font-size: 1.3rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+.legend {
+  margin-top: 30px;
+}
+
+.legend img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10%;
+  display: block;
+  margin: 0 auto;
+}
+
+.legend h3 {
+  padding-bottom: 4px;
+  font-size: 1.4rem;
+  color: rgb(6, 124, 51);
+}
+
+.comparison_div h3 {
+  font-size: 1.6rem;
+  color: rgb(73, 176, 17);
+  margin-top: 68px;
+}
+.comparison_div h4 {
+  font-size: 1.3rem;
+}
+
+.china_jp img {
+  width: 400px;
+  height: 540px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10%;
+  display: block;
+  margin: 0 auto;
+}
+
+.china_jp .matcha_picture {
+  width: 700px;
+  height: 600px;
+}
+
+.china_uk img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10%;
+  display: block;
+  margin: 0 auto;
+}
+
+.china_ru img {
+  width: 710px;
+  height: 475px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10%;
+  display: block;
+  margin: 0 auto;
+}
+
+#trands h3 {
+  font-size: 1.6rem;
+  color: rgb(73, 176, 17);
+  margin-top: 68px;
+}
+
+#trands h4 {
+  font-size: 1.3rem;
+}
+
+#trands .image_orgtea {
+  width: 800px;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10%;
+  display: block;
+  margin: 0 auto;
+}
+
+#trands .image_teaplants {
+  width: 740px;
+  height: 552px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10%;
+  display: block;
+  margin: 0 auto;
+}
+
+#trands .image_euorg {
+  width: 740px;
+  height: 372px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10%;
+  display: block;
+  margin: 0 auto;
+}
+
+#trands .image_sustea {
+  width: 640px;
+  height: 472px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10%;
+  display: block;
+  margin: 0 auto;
+}
+
+#trands .image_teadrunk {
+  width: 440px;
+  height: 532px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10%;
+  display: block;
+  margin: 0 auto;
+}
+#trands .image_teaexpo {
+  width: 800px;
+  height: 637px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10%;
+  display: block;
+  margin: 0 auto;
+}
+#trands .image_lipton {
+  width: 800px;
+  height: 580px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10%;
+  display: block;
+  margin: 0 auto;
+}
+
+#trands .image_starbucks {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10%;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+#conclusion .image_conc {
+  width: 1000px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5%;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+#conclusion strong {
+  text-decoration: underline;
+  cursor: pointer;
+  color: green;
+}
+
+section p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* блок скачивания */
+#downloads .button {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 12px 25px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#downloads .button:hover {
+  background-color: #45a049;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* контактная форма */
+footer {
+  background: linear-gradient(135deg, #333, #111);
+  color: black;
+  padding: 30px 10%;
+  text-align: center;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.icon_email {
+  max-width: 28px;
+  max-height: 28px;
+}
+
+.footer_flexik {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+/* адаптивный дизайн (почти доделан) */
+@media (max-width: 768px) {
+  img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  header {
+    padding: 20px 5%;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main {
+    padding: 20px 5%;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 30px 5%;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  section p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 15px 3%;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 20px 3%;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  section p {
+    font-size: 0.9rem;
+  }
+}
