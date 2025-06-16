@@ -13,3 +13,14 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     }
   });
 });
+
+// strelka
+const scrollBtn = document.getElementById('scrollToTopBtn');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 750) {
+    scrollBtn.classList.add('show');
+  } else {
+    scrollBtn.classList.remove('show');
+  }
+});
